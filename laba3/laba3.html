@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета для участия в конференции</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 2px solid #ccc;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Анкета для участия в научной конференции</h2>
+
+<form action="/submit" method="post">
+    <!-- Личные данные -->
+    <fieldset>
+        <legend>Личные данные</legend>
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+375-XX-XXX-XX-XX" required>
+
+        <label for="password">Пароль для доступа:</label>
+        <input type="password" id="password" name="password" required>
+
+    </fieldset>
+
+    <!-- Выбор секции -->
+    <fieldset>
+        <legend>Выберите секцию конференции</legend>
+
+        <label>
+            <input type="radio" name="section" value="IT" checked> Информационные технологии
+        </label>
+        <label>
+            <input type="radio" name="section" value="Math"> Математика
+        </label>
+        <label>
+            <input type="radio" name="section" value="Physics"> Физика
+        </label>
+    </fieldset>
+
+    <!-- Данные для выступления -->
+    <fieldset>
+        <legend>Данные для выступления</legend>
+
+        <label for="file">Загрузите файл с тезисами:</label>
+        <input type="file" id="file" name="file" required>
+
+        <label>
+            <input type="checkbox" name="agree" required> Согласен с условиями участия
+        </label>
+    </fieldset>
+
+    <!-- Кнопки -->
+    <div class="buttons">
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Сбросить">
+    </div>
+
+</form>
+
+</body>
+</html>

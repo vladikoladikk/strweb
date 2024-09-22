@@ -1,0 +1,114 @@
+/* Общие стили для страницы */
+body {
+    background-color: #f0f0f0; /* Серый цвет фона */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер для контента */
+body > div {
+    width: 1440px;
+    margin: 0 auto; /* Центрируем контент на странице */
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Настройка списка фильмов */
+.film-list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+    text-align: center;
+}
+
+.film-list li {
+    margin: 10px 0;
+}
+
+.film-list a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #000; /* Черный цвет для ссылок */
+}
+
+/* Настройка изображений */
+.film-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.film-images img {
+    width: 300px; /* Фиксированная ширина изображения */
+    height: 200px; /* Фиксированная высота изображения */
+    object-fit: cover; /* Сохраняем пропорции изображения и обрезаем лишнее */
+    padding: 5px; /* Внутренний отступ для создания отступа внутри изображения */
+    border-radius: 15px; /* Закругляем края изображения */
+}
+
+/* Таблицы с параметрами фильма */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .film-images {
+        flex-direction: column;
+    }
+
+    .film-images img {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Шрифты для каждого фильма */
+
+/* Подключаем шрифты */
+@font-face {
+    font-family: 'ShawshankFont';
+    src: url('fonts/Sacramento.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GodfatherFont';
+    src: url('fonts/GodfatherFont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FightClubFont';
+    src: url('fonts/FightClubFont.ttf') format('truetype');
+}
+
+/* Применение шрифтов для фильмов */
+#shawshank p {
+    font-family: 'ShawshankFont', Arial, sans-serif;
+    text-align: center; /* Текст выровнен по центру */
+}
+
+#godfather p {
+    font-family: 'GodfatherFont', Arial, sans-serif;
+    text-align: justify; /* Текст выровнен по ширине */
+}
+
+#fightclub p {
+    font-family: 'FightClubFont', Arial, sans-serif;
+    text-align: left; /* Текст выровнен по левому краю */
+}

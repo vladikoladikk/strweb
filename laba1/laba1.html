@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые фильмы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+        }
+
+        .film-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .film-list li {
+            margin: 10px 0;
+        }
+
+        .film-list a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .film-section {
+            margin: 20px;
+        }
+
+        .film-images {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .film-images img {
+            width: 32%; /* Каждое изображение будет занимать 32% ширины контейнера */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            padding: 5px; /* Добавляем отступ */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .film-images {
+                flex-direction: column; /* На мобильных устройствах изображения будут идти вертикально */
+            }
+
+            .film-images img {
+                width: 80%; /* Изображения будут занимать 80% ширины экрана на маленьких устройствах */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Мои любимые фильмы</h1>
+
+    <ul class="film-list">
+        <li><a href="#shawshank">Побег из Шоушенка</a></li>
+        <li><a href="#godfather">Крёстный отец</a></li>
+        <li><a href="#fightclub">Бойцовский клуб</a></li>
+    </ul>
+
+    <!-- Раздел фильма Побег из Шоушенка -->
+    <div id="shawshank" class="film-section">
+        <h2>Побег из Шоушенка</h2>
+        <p><strong>Краткое содержание:</strong> Успешный банкир Энди Дюфрейн оказывается осуждённым за убийство, которого он не совершал. Находясь в тюрьме Шоушенк, он начинает планировать свой побег, параллельно влияя на жизни других заключённых и оставляя след на их судьбах.</p>
+
+        <!-- Кадры из фильма -->
+        <div class="film-images">
+            <img src="shawshank1.jpeg" alt="Кадр из фильма 1">
+            <img src="shawshank2.jpeg" alt="Кадр из фильма 2">
+            <img src="shawshank3.jpeg" alt="Кадр из фильма 3">
+        </div>
+
+        <!-- Таблица с информацией о фильме -->
+        <table>
+            <tr>
+                <th>Год</th>
+                <th>Страна</th>
+                <th>Жанр</th>
+                <th>Режиссёр</th>
+            </tr>
+            <tr>
+                <td>1994</td>
+                <td>США</td>
+                <td>Драма, криминал</td>
+                <td>Фрэнк Дарабонт</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Раздел фильма Крёстный отец -->
+    <div id="godfather" class="film-section">
+        <h2>Крёстный отец</h2>
+        <p><strong>Краткое содержание:</strong> Вито Корлеоне является уважаемым главой мафиозной семьи. Когда на него совершается покушение, его сын Майкл вынужден взять бразды правления в свои руки и стать новым доном.</p>
+
+        <!-- Кадры из фильма -->
+        <div class="film-images">
+            <img src="godfather1.jpeg" alt="Кадр из фильма 1">
+            <img src="godfather2.jpeg" alt="Кадр из фильма 2">
+            <img src="godfather3.jpeg" alt="Кадр из фильма 3">
+        </div>
+
+        <!-- Таблица с информацией о фильме -->
+        <table>
+            <tr>
+                <th>Год</th>
+                <th>Страна</th>
+                <th>Жанр</th>
+                <th>Режиссёр</th>
+            </tr>
+            <tr>
+                <td>1972</td>
+                <td>США</td>
+                <td>Драма, криминал</td>
+                <td>Фрэнсис Форд Коппола</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Раздел фильма Бойцовский клуб -->
+    <div id="fightclub" class="film-section">
+        <h2>Бойцовский клуб</h2>
+        <p><strong>Краткое содержание:</strong> Обычный офисный работник страдает от бессонницы, пока не находит способ изменить свою жизнь благодаря созданию подпольного бойцовского клуба.</p>
+
+        <!-- Кадры из фильма -->
+        <div class="film-images">
+            <img src="fightclub1.jpeg" alt="Кадр из фильма 1">
+            <img src="fightclub2.jpeg" alt="Кадр из фильма 2">
+            <img src="fightclub3.jpeg" alt="Кадр из фильма 3">
+        </div>
+
+        <!-- Таблица с информацией о фильме -->
+        <table>
+            <tr>
+                <th>Год</th>
+                <th>Страна</th>
+                <th>Жанр</th>
+                <th>Режиссёр</th>
+            </tr>
+            <tr>
+                <td>1999</td>
+                <td>США</td>
+                <td>Драма, триллер</td>
+                <td>Дэвид Финчер</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
