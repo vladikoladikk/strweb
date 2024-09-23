@@ -1,26 +1,26 @@
-/* Общие стили для страницы */
+
 body {
-    background-color: #f0f0f0; /* Серый цвет фона */
+    background-color: #f0f0f0; 
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Контейнер для контента */
+
 body > div {
     width: 1440px;
-    margin: 0 auto; /* Центрируем контент на странице */
+    margin: 0 auto;
 }
 
-/* Заголовки */
+
 h1, h2, h3 {
     text-align: center;
     color: #333;
 }
 
-/* Настройка списка фильмов */
+
 .film-list {
-    list-style-type: none; /* Убираем маркеры списка */
+    list-style-type: none; 
     padding: 0;
     text-align: center;
 }
@@ -30,11 +30,11 @@ h1, h2, h3 {
 }
 
 .film-list a {
-    text-decoration: none; /* Убираем подчеркивание ссылок */
-    color: #000; /* Черный цвет для ссылок */
+    text-decoration: none; 
+    color: #000; 
 }
 
-/* Настройка изображений */
+
 .film-images {
     display: flex;
     justify-content: space-between;
@@ -44,14 +44,14 @@ h1, h2, h3 {
 }
 
 .film-images img {
-    width: 300px; /* Фиксированная ширина изображения */
-    height: 200px; /* Фиксированная высота изображения */
-    object-fit: cover; /* Сохраняем пропорции изображения и обрезаем лишнее */
-    padding: 5px; /* Внутренний отступ для создания отступа внутри изображения */
-    border-radius: 15px; /* Закругляем края изображения */
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; /* сохранене пропорции изображения и обрезаем лишнее */
+    padding: 5px;
+    border-radius: 15px;
 }
 
-/* Таблицы с параметрами фильма */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -79,9 +79,9 @@ th, td {
     }
 }
 
-/* Шрифты для каждого фильма */
 
-/* Подключаем шрифты */
+
+/*  шрифты */
 @font-face {
     font-family: 'ShawshankFont';
     src: url('fonts/Sacramento.ttf') format('truetype');
@@ -100,15 +100,15 @@ th, td {
 /* Применение шрифтов для фильмов */
 #shawshank p {
     font-family: 'ShawshankFont', Arial, sans-serif;
-    text-align: center; /* Текст выровнен по центру */
+    text-align: center; 
 }
 
 #godfather p {
     font-family: 'GodfatherFont', Arial, sans-serif;
-    text-align: justify; /* Текст выровнен по ширине */
+    text-align: justify; /* по ширине */
 }
 
 #fightclub p {
     font-family: 'FightClubFont', Arial, sans-serif;
-    text-align: left; /* Текст выровнен по левому краю */
+    text-align: left; 
 }
