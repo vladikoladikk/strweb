@@ -1,0 +1,109 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Кнопка с вибрацией */
+.vibrating-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    animation: vibrate 0.1s infinite;
+    transition: background-color 0.3s;
+}
+
+.vibrating-button:hover {
+    animation-play-state: paused;
+    background-color: green;
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+}
+
+/* Ссылка с анимацией подчеркивания */
+.important-link {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.important-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: green;
+    bottom: -2px;
+    left: 50%;
+    transition: width 0.5s, left 0.5s;
+}
+
+.important-link:hover {
+    color: green;
+}
+
+.important-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Контейнер для мячика */
+.ball-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    animation: bounce 3s cubic-bezier(0.28, 0.84, 0.42, 1) forwards;
+}
+
+
+/* Анимация мячика */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-200px) scaleX(1);
+    }
+    40% {
+        transform: translateY(0) scaleX(1.2);
+    }
+    60% {
+        transform: translateY(-100px) scaleX(1);
+    }
+    80% {
+        transform: translateY(0) scaleX(1.1);
+    }
+    90% {
+        transform: translateY(-50px) scaleX(1);
+    }
+    100% {
+        transform: translateY(0) scaleX(1);
+    }
+}
+
