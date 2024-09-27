@@ -67,16 +67,6 @@ th, td {
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .film-images {
-        flex-direction: column;
-    }
-
-    .film-images img {
-        width: 80%;
-        margin-bottom: 10px;
-    }
-}
 
 
 
