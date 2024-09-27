@@ -67,7 +67,6 @@ th, td {
     text-align: center;
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     .film-images {
         flex-direction: column;
@@ -97,7 +96,7 @@ th, td {
     src: url('fonts/FightClubFont.ttf') format('truetype');
 }
 
-/* Применение шрифтов для фильмов */
+
 #shawshank p {
     font-family: 'ShawshankFont', Arial, sans-serif;
     text-align: center; 
