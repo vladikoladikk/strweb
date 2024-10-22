@@ -36,7 +36,7 @@
 <h2>Анкета для участия в научной конференции</h2>
 
 <form action="/submit" method="post">
-    <!-- Личные данные -->
+
     <fieldset>
         <legend>Личные данные</legend>
 
@@ -47,14 +47,13 @@
         <input type="email" id="email" name="email" required>
 
         <label for="phone">Телефон:</label>
-        <input type="tel" id="phone" name="phone" placeholder="+375-XX-XXX-XX-XX" required>
+        <input type="tel" id="phone" name="phone">
 
         <label for="password">Пароль для доступа:</label>
         <input type="password" id="password" name="password" required>
 
     </fieldset>
 
-    <!-- Выбор секции -->
     <fieldset>
         <legend>Выберите секцию конференции</legend>
 
@@ -69,7 +68,6 @@
         </label>
     </fieldset>
 
-    <!-- Данные для выступления -->
     <fieldset>
         <legend>Данные для выступления</legend>
 
@@ -81,7 +79,6 @@
         </label>
     </fieldset>
 
-    <!-- Кнопки -->
     <div class="buttons">
         <input type="submit" value="Отправить">
         <input type="reset" value="Сбросить">
