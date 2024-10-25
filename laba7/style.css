@@ -1,0 +1,81 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(16, 233, 215, 0.178);
+    flex-grow: 1;
+}
+
+article:nth-child(1) {
+    grid-area: first;
+}
+
+article:nth-child(2) {
+    grid-area: second;
+}
+
+article:nth-child(3) {
+    grid-area: third;
+}
+
+article:nth-child(4) {
+    grid-area: fourth;
+}
+
+article:nth-child(5) {
+    grid-area: fifth;
+}
+
+@media (min-width: 1400px) {
+    .adaptive {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas:
+      "first first second second"
+      "first first second second"
+      "third third third third"
+      "third third third third"
+      "fourth fourth fifth fifth"
+      "fourth fourth fifth fifth"
+      "sixth seventh eighth ninth"
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1399px) {
+    .adaptive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+      "first first"
+      "first first"
+      "second second"
+      "second second"
+      "third third"
+      "third third"
+      "fourth fifth"
+      "fourth fifth"
+      "sixth seventh"
+      "eighth ninth"
+    }
+}
